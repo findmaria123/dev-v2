@@ -2,7 +2,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div>page</div>
+    <div className='container mx-auto h-screen'>page</div>
   )
 }
 

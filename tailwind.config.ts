@@ -19,6 +19,13 @@ const config: Config = {
         "Makeniku-yellow": "#EFB82C",
         "light-grey": "#EDEDED",
       },
+      dropShadow: {
+        shadow: ["1px 1px 1px black, 0 0 1px black, 0 0 1px black"],
+      },
+      fontFamily: {
+        poppins: "Poppins, sans-serif",
+        inter: "Inter, sans-serif",
+      },
     },
   },
   plugins: [],

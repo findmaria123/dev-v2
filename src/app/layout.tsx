@@ -18,11 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={inter.className} suppressHydrationWarning={true}>
         <Header />
-        <main className="h-screen">
-        {children}
-        </main>
+        <main className="lg:bg-light-grey h-full">{children}</main>
         <Footer />
       </body>
     </html>

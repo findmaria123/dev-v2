@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,8 +19,30 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-body{
-  background-color: #EDEDED;
+
+.title-font {
+  text-shadow: 1px 1px 6px black, 0 0 1px black, 0 0 1px black;
+}
+
+.brand-button {
+  @apply text-primary border-[3px] w-[285px] h-[58px] border-primary text-[25px] font-normal rounded-full font-poppins hover:bg-primary hover:text-white;
+}
+.header-button {
+  @apply text-primary border-2 py-[6px] h-[42px] px-[15px] xl:px-[24px] border-primary md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] font-bold rounded-full hover:bg-primary hover:text-white;
+}
+
+.header-small-button{
+  @apply text-primary w-full border-2 py-[3px] h-[30px] px-[15px] border-primary text-[14px] font-bold rounded-full
+}
+.input-text{
+  @apply flex rounded-[20px] shadow-sm 
+}
+.input-label{
+  @apply text-[22px] font-normal font-poppins leading-6 text-black
+}
+
+.form-input{
+  @apply flex-1 bg-light-grey h-[60px] p-4 font-poppins leading-6 border-[1px] border-gray-200 text-dark-grey text-[18px] font-light focus:outline-none rounded-[20px] sm:leading-6
 }
 
 
